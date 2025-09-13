@@ -1,7 +1,6 @@
 // Mock data
 const projects = [
-    { hash: '#004', time: 'Sep 2025 ', title: 'V-Chain : My Portfolio Website', desc: 'Developed a portfolio website themed as a Blockchain Explorer, showcasing skills and projects with an interactive and modern UI', tools: ['HTML', 'CSS', 'JavaScript'], links: { code: '#', demo: '#' } },
-
+   
     { hash: '#003', time: 'Sep 2025 ', title: 'UniversalAdapter : open-source java library', desc: 'Developed an open-source Java library that unifies multiple AWT/Swing adapter classes into a single abstract adapter, simplifying GUI event handling and reducing boilerplate code. Published on GitHub with documentation, example usage, and MIT license for community use.', tools: ['Java', 'Jar manifest', 'AWT/Swing'], links: { code: '#', demo: '#' } },
 
     { hash: '#002', time: 'Apr 2025', title: 'Filora : Secure file sharing and storage system', desc: ' A decentralized web application for secure file sharing and storage with encryption, authentication, and permission control. Built using IPFS for decentralized storage and Firebase for user and metadata management.', tools: ['HTML5', 'CSS3', 'Javascript', 'Firebase', 'IPFS'], links: { code: '#', demo: '#' } },
@@ -74,7 +73,7 @@ const skills = [
     { category: "Frontend Development", items: [{ name: "HTML5", level: "intermediate" }, { name: "CSS3", level: "intermediate" }, { name: "Bootstrap", level: "intermediate" }, { name: "React", level: "basic" }, { name: "Tailwind", level: "basic" }, { name: "Materialize", level: "basic" }] },
     { category: "Backend Development", items: [{ name: "Nodejs", level: "basic" }, { name: "Springboot", level: "basic" }, { name: "Express", level: "basic" }] },
     { category: "Mobile App Development", items: [{ name: "Android(Java)", level: "intermediate" }, { name: "Reactnative", level: "basic" }] },
-    { category: "Database", items: [{ name: "MySQL", level: "intermediate" }, { name: "MongoDB", level: "basic" }, { name: "PostgraceSQL", level: "basic" }, { name: "Oracle", level: "basic" }, { name: "CockroachDB", level: "basic" }] },
+    { category: "Database", items: [{ name: "MySQL", level: "intermediate" }, { name: "MongoDB", level: "basic" }, { name: "Postgresql", level: "basic" }, { name: "Oracle", level: "basic" }, { name: "CockroachDB", level: "basic" }] },
     { category: "Backend as a Service (BaaS)", items: [{ name: "Firebase", level: "intermediate" }] },
     { category: "Tools & Platforms", items: [{ name: "Linux", level: "intermediate" }, { name: "Git/GitHub", level: "intermediate" }, { name: "VS Code", level: "intermediate" }] }
 ];
