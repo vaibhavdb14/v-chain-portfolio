@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>V-Chain Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <div class="brand">
+      <div class="logo">(◕‿◕)</div>
+      <div class="title">
+        <div style="font-size:14px;color:var(--neon-green);font-weight:700">Block #0000: V-Chain</div>
+        <small class="tag">Connected to Vaibhav’s Portfolio block <span style="font-family:var(--mono);"> — welcome on-Vchain</span></small>
+      </div>
+    </div>
+    <nav style="display:flex;gap:12px;align-items:center">
+      <div style="color:var(--muted);font-family:var(--mono);font-size:13px">Identity Verified </div>
+      <div style="font-size:13px;color:var(--muted)">|</div>
+      <div style="font-family:var(--mono);font-size:13px;color:var(--neon-cyan)">[Connected to V-chain]</div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="genesis">
+      <div class="card hero">
+        <h1>Block #0000: Vaibhav Bodade</h1>
+        <h2>Vaibhav — <span style="color:var(--neon-cyan)"> Coder</span></h2>
+        <div class="tag">Java Developer | Web Developer | Problem Solver</div>
+
+        <div class="chain-anim" aria-hidden>
+          <svg viewBox="0 0 1200 220" preserveAspectRatio="none">
+            <defs>
+              <linearGradient id="g" x1="0" x2="1">
+                <stop offset="0" stop-color="#002" />
+                <stop offset="1" stop-color="#002" stop-opacity="0" />
+              </linearGradient>
+            </defs>
+            <g fill="none" stroke="url(#g)" stroke-width="2" stroke-opacity="0.6">
+              <path d="M0 100 C150 30, 350 170, 500 100 S850 60, 1200 100" stroke="rgba(59,214,255,0.12)" />
+              <!-- animated dots -->
+              <g>
+                <circle cx="60" cy="100" r="6" fill="rgba(0,229,255,0.9)" opacity="0.9">
+                  <animate attributeName="cx" from="60" to="1140" dur="12s" repeatCount="indefinite" />
+                </circle>
+                <circle cx="-40" cy="140" r="4" fill="rgba(57,255,138,0.8)">
+                  <animate attributeName="cx" from="-40" to="1160" dur="9s" repeatCount="indefinite" />
+                </circle>
+              </g>
+            </g>
+          </svg>
+        </div>
+
+        
+        <!-- Project section -->
+        <div style="margin-top:16px">
+          <strong style="color:var(--muted);font-size:13px">Project - Timeline</strong>
+          
+          <!-- 🔍 Search Bar -->
+          <div style="margin-top:10px; display:flex; gap:10px; align-items:center">
+            <input id="searchProjects" type="text" placeholder="Search projects..."
+              style="flex:1;padding:8px;border-radius:8px;border:1px solid rgba(255,255,255,0.05);background:transparent;color:inherit;">
+            <button class="btn" onclick="filterProjects()">Search</button>
+          </div>
+
+          <div class="tx-list card" id="txList" style="margin-top:10px">
+          </div>
+        </div>
+      </div>
+
+      <!-- Profile Sanpshot -->
+      <aside class="card">
+        <h3 style="margin-top:0">Profile Snapshot</h3>
+        <hr style="border:none;height:1px;background:rgba(255,255,255,0.03);margin:12px 0">
+        <p class="tag">Name: <span style="color:var(--neon-cyan)">Vaibhav Bodade</span></p>
+        <p class="tag">Location: <span style="color:var(--neon-cyan)">Pune, India</span></p>
+        <p class="tag">LinkedIn: <span style="color:var(--neon-cyan)"><a
+              href="https://www.linkedin.com/in/vaibhav-bodade-75a99722a/" target="_blank">View</a></span></p>
+        <p class="tag">GitHub: <span style="color:var(--neon-cyan)"><a href="https://github.com/vaibhavdb14"
+              target="_blank">View</a></span></p>
+        <p class="tag">X: <span style="color:var(--neon-cyan)"><a href="https://x.com/Vaibhav03z_"
+              target="_blank">View</a></span></p>
+        <p class="tag">Email: <span style="color:var(--neon-cyan)">vdbodade140705@gmail.com</span></p>
+        <hr style="border:none;height:1px;background:rgba(255,255,255,0.03);margin:12px 0">
+      </aside>
+    </section>
+
+
+    <!-- Education timeline -->
+    <section style="margin-top:22px" class="card">
+      <h3 style="margin-top:0">Education & Experinece Timeline</h3>
+      <div class="timeline" id="timeline"></div>
+      <div id="blockDetails" style="margin-top:12px;color:var(--muted)"></div>
+    </section>
+
+
+    <!-- Skills section -->
+    <section style="margin-top:22px" class="card">
+      <h3 style="margin-top:0">Skills — Learning and applying</h3>
+      <!-- Legend -->
+      <div class="legend">
+        <div class="legend-item">
+          <div class="legend-box" style="background:var(--basic)"></div> Basic(Learning)
+        </div>
+        <div class="legend-item">
+          <div class="legend-box" style="background:var(--intermediate)"></div> Intermediate
+        </div>
+        <div class="legend-item">
+          <div class="legend-box" style="background:var(--advanced)"></div> Advanced
+        </div>
+      </div>
+      <div id="skillsContainer"></div>
+    </section>
+
+
+    <!--Download Resume -->
+    <section style="margin-top:22px" class="card">
+      <div style="display:flex;gap:10px;align-items:center">
+        <button class="send" id="sendBtn">Download Resume</button>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>Made with ♥ — Vaibhav's portfolio. Best viewed on desktop for full experience.</footer>
+  
+  
+  <script src="script.js"></script>
+</body>
+</html>
